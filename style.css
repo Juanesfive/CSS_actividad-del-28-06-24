@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.enlace {
+  display: block;
+  background-color: tomato;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 3px solid crimson;
+  font-size: 20px;
+  text-align: center;
+}
+
+.enlace:link {
+  background-color: blue;
+  color: #000;
+  border-bottom: 3px solid black;
+}
+
+.enlace:visited {
+  background-color: crimson;
+}
+
+.enlace:hover {
+  background-color: azure;
+  color: #000;
+}
+
+.enlace:active {
+  background-color: red;
+}
+
+.event {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.event:active {
+  background-color: skyblue;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #2b4ad2;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: 2s;
+}
+
+#objetivo:target {
+  border-radius: 0;
+}
+
+/* Para el formulario*/
+
+.form {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 5px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+input:focus {
+  background-color: rgba(0, 0, 255, 0.347);
+  color: blue;
+}
+
+input[type="check"]:checked + label:checked {
+  color: red;
+}
+
+input:focus-within {
+  background: #d2d2d2;
+  padding: 12px 15px;
+  border: 2px solid #000;
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: Arial;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3:not(.title):not(:hover) {
+  color: red;
+}

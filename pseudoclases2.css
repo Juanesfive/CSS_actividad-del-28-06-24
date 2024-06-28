@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+.box {
+  display: block;
+  background-color: skyblue;
+  width: 55px;
+  height: 55px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 55px;
+  color: white;
+}
+
+.container {
+  margin-left: -5px;
+  padding: 10px 0;
+  border: 3px solid crimson;
+}
+
+/*
+.box:only-of-type{
+  background-color: tomato;
+}*/
+
+/*
+.box:first-of-type{
+  background-color: tomato;
+}*/
+
+/* .box:last-of-type {
+  background-color: tomato;
+}*/
+
+.box:nth-child(odd) {
+  background-color: tomato;
+}
