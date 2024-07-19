@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
-.body{
-
+body {
+  font-family: Arial;
+  height: 300vh;
 }
 
-.container{
+.container {
   width: 450px;
   height: 550px;
   margin: 0 auto;
   border: 3px solid crimson;
+  margin-top: 80px;
+  position: relative;
+  z-index: 99px;
 }
 
-.box{
+.box {
   background: rgb(0, 179, 255);
   width: 100px;
   height: 100px;
@@ -27,9 +31,36 @@
   font-weight: bold;
 }
 
-.static{
-position: static;
+.static {
+  position: static;
+  background-color: black;
 }
-.relative{
+.relative {
   position: relative;
+  /*top: 40px;
+  left: 0px;
+  right: 0px;*/
+  background-color: blueviolet;
+  z-index: 2;
+}
+
+.absolute {
+  position: absolute;
+  /* top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  margin-left: 0; */
+  background-color: red;
+  z-index: 2;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 1;
 }
