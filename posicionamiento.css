@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+
+}
+
+.container{
+  width: 450px;
+  height: 550px;
+  margin: 0 auto;
+  border: 3px solid crimson;
+}
+
+.box{
+  background: rgb(0, 179, 255);
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+.static{
+position: static;
+}
+.relative{
+  position: relative;
+}
